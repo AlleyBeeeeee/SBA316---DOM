@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBA316</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>Create a Recipe Card</h1>
+  <form id ="rec-form">
+    <label for="name">Recipe Name:</label>
+    <input type="text" id="name" name="Name" required>
+
+    <label for="ingredients">Ingredients:</label>
+    <textarea id="in-list" name="ingredients" required></textarea>
+
+    <label for="steps">Instructions:</label>
+    <textarea name="instructions" id="instructions" required></textarea>
+    <button type="submit">Create Card</button>
+  </form>
+
+  <div id="container"></div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
