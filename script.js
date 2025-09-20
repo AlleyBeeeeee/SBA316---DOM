@@ -79,7 +79,7 @@ recipeForm.addEventListener("submit", (event) => {
     return;
   }
 
-  //image uploader ? gotta recheck
+  //image uploader check
   if (pictureFile) {
     const reader = new FileReader();
     reader.onload = (e) => {
