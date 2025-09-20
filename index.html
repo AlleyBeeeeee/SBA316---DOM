@@ -3,25 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SBA316</title>
+    <title>"Grill Interrupted</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
 </head>
-<body>
-    <h1>Create a Recipe Card</h1>
-  <form id ="rec-form">
-    <label for="name">Recipe Name:</label>
-    <input type="text" id="name" name="Name" required>
+<body> 
+    <div>
+    <h1>Grill Interrupted: </h1>
+    <h1>A Recipe Joint</h1></div>
+  <h1 class="header">Create a Recipe Card</h1>
+    <form id="recipe-form">
+        <label for="title">Recipe Title:</label>
+        <input type="text" id="title" name="title" required>
 
-    <label for="ingredients">Ingredients:</label>
-    <textarea id="in-list" name="ingredients" required></textarea>
+        <label for="ingredients">Ingredients:</label>
+        <textarea id="ingredients" name="ingredients" required></textarea>
 
-    <label for="steps">Instructions:</label>
-    <textarea name="instructions" id="instructions" required></textarea>
-    <button type="submit">Create Card</button>
-  </form>
+        <label for="instructions">Instructions:</label>
+        <textarea id="instructions" name="instructions" required></textarea>
+        <div class="form">
+          <label for="picture">Picture Upload:</label>
+          <input type="file" id="picture" name="picture" accept="image/*" />
+        </div>
+        <input type="submit" value="Submit" />
+      </form>
+        <button class="btn" type="submit">Generate Recipe Card</button>
+    </form>
 
-  <div id="container"></div>
+    <div id="card-container"></div>
+
+    <ul id="recipeList">
+       
+    </ul>
+    
+
+    <div id="recipeCardDisplay">
   
     <script src="script.js"></script>
 </body>
